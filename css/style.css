@@ -49,6 +49,7 @@ padding: 0 15px 0 15px;
 
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-logo {
@@ -71,6 +72,7 @@ font-weight: 700;
         color: #2e2f42;
         
 }
+
 .header-navigation{
     display: flex;
     align-items: center;
@@ -92,9 +94,11 @@ font-weight: 500;
     position: relative;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
  .active {
     color: #404bbf;
 }
+
 .active::after{
 content: "";
     width: 100%;
@@ -105,13 +109,14 @@ content: "";
     background-color: #404bbf;
     border-radius: 2px;
 }
+
 .navigation-link:hover {
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #404bbf;
-        
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .navigation-link:active {
@@ -121,10 +126,12 @@ content: "";
         letter-spacing: 0.02em;
         color: #404bbf;
         text-decoration: underline;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link:focus{
 color: #404bbf;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address {
@@ -154,6 +161,7 @@ font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #404bbf;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ======hero====== */
 
@@ -209,6 +217,7 @@ font-weight: 700;
 .hero-btn:hover,
 .hero-btn:focus {
     background: #404bbf;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* =====adventages===== */
@@ -283,6 +292,7 @@ padding: 120px 0 120px 0;
     text-transform: capitalize; 
     margin-bottom: 72px;
 }
+
 .team-list {
     display: flex;
     gap: 24px;
@@ -328,6 +338,7 @@ padding: 32px 0 8px;
     gap: 24px;
   padding: 0 16px 32px;
 }
+
 .team-soclink-icon {
     width: 40px;
     height: 40px;
@@ -337,12 +348,11 @@ padding: 32px 0 8px;
     align-items: center;
     justify-content: center;
     fill:#f4f4fd;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soclink-icon:hover {
   background-color: #404bbf;
-
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
 /* =========portfolio========== */
@@ -489,6 +499,7 @@ font-weight: 700;
         color: #fff;
         margin-bottom: 16px;
 }
+
 .footer-soclink-icon {
     width: 40px;
     height: 40px;
